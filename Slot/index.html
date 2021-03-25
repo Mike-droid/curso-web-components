@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Elements</title>
+</head>
+<body>
+
+  <my-element>
+    <span slot="title">Soy el h2 que está en el slot de JS</span>
+    <span slot="paragraph">Soy el p que está en el slot de JS</span>
+  </my-element> <!!---Esto viene de JS en customElements.define()-->
+
+  <script type="module" src="my-element.js"></script>
+
+</body>
+</html>
