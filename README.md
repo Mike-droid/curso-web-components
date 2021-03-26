@@ -166,3 +166,44 @@ La ventaja de usar este método, es que si por ejemplo usamos `remove()` tendrí
 ## Estilos en Componentes
 
 ### :host
+
+Es una pseudo-clase que nos ayudará a darle estilos a nuestro componente web.
+
+:HOST
+Pseudoclase que utilizaremos para darle estilos a nuestro componente web (no se trata necesariamente de los estilos visuales).
+.
+Se trata de los estilos que vienen definidos por default con una etiqueta, como pueden ser display, padding y margin.
+.
+:host da estilos al componente
+.
+La pseudoclase :host se utiliza dentro del método donde escribíamos nuestro css del componente getStyles(){}
+.
+**:host** {estilos para el componente}
+.
+Teniendo varias instancias de un componente, si a una le agregamos una clase por ejemplo ‘blue’
+:host(.blue) {estilos para el componente con la clase blue}
+Va a buscar el elemento que tenga de atributo una clase con el valor blue y le va a agregar los estilos que definimos.
+.
+También podemos darle estilos por atributo. Por ejemplo si a una instancia le agregamos el atributo ‘yellow’
+:host([yellow]) {estilos para el elemento que tenga el atributo yellow}
+.
+También podemos agregar cierto contexto.
+Por ejemplo, si tenemos una instancia del componente dentro de un article con una clase ‘card’
+:host-context(article.card) {estilos}
+.
+Hacer cambios al contenido del componente
+:host([yellow]) h1 {estilos}
+
+**NOTA IMPORTANTE:** a día de hoy (25 de marzo de 2021), esto NO funciona en Firefox
+
+### ::slotted
+
+Este pseudo-elemento nos ayudará para dar estilos específicos a todo el contenido dinámico de fuera del componente y se vaya colocando en las etiquetas `<slot></slot>` que estén adentro de nuestro componente.
+
+[Documentación oficial de ::sloted()](https://developer.mozilla.org/en-US/docs/Web/CSS/::slotted)
+
+### CSS custom properties
+
+[Documentación oficial de CSS custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/--*)
+
+Recuerda, la promesa de los Web Components es ser 100% reutilizables.

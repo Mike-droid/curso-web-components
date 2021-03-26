@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom properties</title>
+  <style>
+    my-element{ /*Estamos reesecribiendo los estilos que están en JS y también lo podemos hacer desde los archivos CSS*/
+      --primary-color: blue;
+      --heading-primary: 40px;
+    }
+
+    .segundo{
+      --primary-color: red;
+    }
+
+    .tercero{
+      --secondary-color: lime;
+    }
+  </style>
+</head>
+<body>
+  <my-element>
+    <span slot="title">Hola desde un componente 1</span>
+    <span class="text" slot="parrafo">Soy texto ejemplo</span>
+  </my-element>
+
+  <my-element class="segundo">
+    <span slot="title">Hola desde un componente 2</span>
+    <span class="text" slot="parrafo">Soy texto ejemplo</span>
+  </my-element>
+
+  <my-element class="tercero">
+    <span slot="title">Hola desde un componente 3</span>
+    <span class="text" slot="parrafo">Soy texto ejemplo</span>
+  </my-element>
+
+  <script type="module" src="my-element.js"></script>
+</body>
+</html>
