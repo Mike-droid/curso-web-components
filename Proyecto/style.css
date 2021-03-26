@@ -1,0 +1,26 @@
+:root{
+  --primary-blue: #4855a0;
+  --header-blue: #414b90;
+  --gray: #a39fa4;
+  font-family: 'Roboto', sans-serif;
+}
+
+.body{
+  background-color: black;
+}
+
+.buy-button{
+  height: fit-content;
+  color: white;
+  background-color: var(--primary-blue);
+  border-radius: 20px;
+  font-size: 1.1rem;
+  padding: 4px 12px;
+  border: none;
+}
+
+@media screen and (min-width:1000px){
+  .buy-button{
+    padding: 8px 15px;
+  }
+}
