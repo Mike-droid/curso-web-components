@@ -23,7 +23,7 @@ estas son:
 - HTML Templates
 - Custom Elements
 - Shadow DOM (la magia)
-- ES Modules
+- ES6 Modules
 
 ### API de Web Components
 
@@ -207,3 +207,9 @@ Este pseudo-elemento nos ayudará para dar estilos específicos a todo el conten
 [Documentación oficial de CSS custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/--*)
 
 Recuerda, la promesa de los Web Components es ser 100% reutilizables.
+
+## WEb Components de terceros
+
+### Utilizando componentes de terceros
+
+Podemos usar componentes que ya existen en nuestros proyectos.
